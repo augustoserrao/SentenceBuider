@@ -1,0 +1,156 @@
+﻿<!-- Augusto Serrao
+     Deepti Aggarwal
+     Hartaj Dhillon
+    Gagandeep singh
+    Shoaib Hassan
+-->
+    
+    <Window x:Class="SentenceBuilder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SentenceBuilder"
+        mc:Ignorable="d"
+        Title="Sentence Buider" Height="400" Width="525"
+        Background="LightSlateGray">
+    <Grid Margin="0,3,0.4,-3.2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="3*"/>
+            <RowDefinition Height="1.5*"/>
+            <RowDefinition Height="0.5*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <GroupBox Header="Pronouns" FontSize="11" FontStyle="Italic" BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="0" Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnI" Content="I" Grid.Row="0" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnYou" Content="you" Grid.Row="1" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnHe" Content="he" Grid.Row="2" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnShe" Content="she" Grid.Row="3" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnIt" Content="it" Grid.Row="4" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnWe" Content="we" Grid.Row="5" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnThey" Content="they" Grid.Row="6" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Verbs" FontSize="11" FontStyle="Italic" BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="1" Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnGo" Content="go" Grid.Row="0" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnCome" Content="come" Grid.Row="1" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnLike" Content="like" Grid.Row="2" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnDo" Content="do" Grid.Row="3" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnLook" Content="look" Grid.Row="4" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnSee" Content="see" Grid.Row="5" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnWork" Content="work" Grid.Row="6" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Prep / artic" FontSize="11" FontStyle="Italic" BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="2" Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnTo" Content="to" Grid.Row="0" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnAt" Content="at" Grid.Row="1" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnFrom" Content="from" Grid.Row="2" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnOn" Content="on" Grid.Row="3" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnIn" Content="in" Grid.Row="4" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnThe" Content="the" Grid.Row="5" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnA" Content="a" Grid.Row="6" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+            </Grid>
+        </GroupBox>
+
+        <GroupBox Header="Adjectives" FontSize="11" FontStyle="Italic" BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="3" Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnGood" Content="good" Grid.Row="0" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnBad" Content="bad" Grid.Row="1" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnUgly" Content="ugly" Grid.Row="2" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnPretty" Content="pretty" Grid.Row="3" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnBig" Content="big" Grid.Row="4" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnSmall" Content="small" Grid.Row="5" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnCool" Content="cool" Grid.Row="6" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+            </Grid>
+        </GroupBox>
+
+
+        <GroupBox Header="Nouns" FontSize="11" FontStyle="Italic" BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="4" Margin="5">
+            <StackPanel>
+                <Button Name="btnSchool" Content="school" Grid.Row="0" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnHome" Content="home" Grid.Row="1" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnBicycle" Content="bicycle" Grid.Row="2" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnBook" Content="book" Grid.Row="3" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnAirport" Content="airport" Grid.Row="4" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnMarket" Content="market" Grid.Row="5" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+                <Button Name="btnLibrary" Content="library" Grid.Row="6" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Word_Click" />
+            </StackPanel>
+        </GroupBox>
+
+        <GroupBox Header="Punctuation" FontSize="11" FontStyle="Italic" BorderBrush="Black" BorderThickness="1" Grid.Row="0" Grid.Column="5" Margin="5">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Button Name="btnEndPoint" Content="." Grid.Row="0" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Punctuation_Click" />
+                <Button Name="btnComma" Content="," Grid.Row="1" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Punctuation_Click" />
+                <Button Name="btnSemicolon" Content=";" Grid.Row="2" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Punctuation_Click" />
+                <Button Name="btnColon" Content=":" Grid.Row="3" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Punctuation_Click" />
+                <Button Name="btnDash" Content="-" Grid.Row="4" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Punctuation_Click" />
+                <Button Name="btnExclamation" Content="!" Grid.Row="5" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Punctuation_Click" />
+                <Button Name="btnInterrogation" Content="?" Grid.Row="6" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="2" Click="Button_Punctuation_Click" />
+            </Grid>
+        </GroupBox>
+
+        <Label Grid.Row="1" Grid.ColumnSpan="6" Background="WhiteSmoke" Margin="7">
+            <TextBox Name="tbxSentence" TextWrapping="WrapWithOverflow"  HorizontalContentAlignment="Left" VerticalContentAlignment="Top" FontSize="15" BorderThickness="0"/>
+        </Label>
+
+        <Button Name="btnClear" Content="Clear" Grid.Row="2" Grid.ColumnSpan="6" FontSize="15" FontWeight="Bold" FontStyle="Normal" Margin="220, 5" Click="Button_Clear_Click" />
+    </Grid>
+</Window>
